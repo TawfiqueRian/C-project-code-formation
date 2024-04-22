@@ -3,9 +3,9 @@
 
 // Define a structure to represent a node in the binary tree
 struct Node {
-    int value;          // Value of the node
-    struct Node *left;  // Pointer to the left child
-    struct Node *right; // Pointer to the right child
+    int value;      
+    struct Node *left;  
+    struct Node *right; 
 };
 
 // Function to recursively explore and print the values of nodes in the binary tree
@@ -14,9 +14,9 @@ void explore(struct Node *root) {
         return; // Base case: if the root is NULL, return
     } 
     else {
-        printf(" %d ", root->value); // Print the value of the current node
-        explore(root->left);          // Explore the left subtree
-        explore(root->right);         // Explore the right subtree
+        printf(" %d ", root->value); 
+        explore(root->left);          
+        explore(root->right);    // Explore the right subtree
     }
 }
 
